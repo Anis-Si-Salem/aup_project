@@ -1,0 +1,164 @@
+[
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/secure_installer.dir/src/main.cpp.o -c /home/glywin/Desktop/client/src/main.cpp",
+  "file": "/home/glywin/Desktop/client/src/main.cpp",
+  "output": "CMakeFiles/secure_installer.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/secure_installer.dir/src/fingerprint.cpp.o -c /home/glywin/Desktop/client/src/fingerprint.cpp",
+  "file": "/home/glywin/Desktop/client/src/fingerprint.cpp",
+  "output": "CMakeFiles/secure_installer.dir/src/fingerprint.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/secure_installer.dir/src/verifier.cpp.o -c /home/glywin/Desktop/client/src/verifier.cpp",
+  "file": "/home/glywin/Desktop/client/src/verifier.cpp",
+  "output": "CMakeFiles/secure_installer.dir/src/verifier.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/secure_installer.dir/src/app_loader.cpp.o -c /home/glywin/Desktop/client/src/app_loader.cpp",
+  "file": "/home/glywin/Desktop/client/src/app_loader.cpp",
+  "output": "CMakeFiles/secure_installer.dir/src/app_loader.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/secure_installer.dir/src/anti_re.cpp.o -c /home/glywin/Desktop/client/src/anti_re.cpp",
+  "file": "/home/glywin/Desktop/client/src/anti_re.cpp",
+  "output": "CMakeFiles/secure_installer.dir/src/anti_re.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/secure_installer.dir/src/license_embed.cpp.o -c /home/glywin/Desktop/client/src/license_embed.cpp",
+  "file": "/home/glywin/Desktop/client/src/license_embed.cpp",
+  "output": "CMakeFiles/secure_installer.dir/src/license_embed.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/secure_installer.dir/src/tpm_attest.cpp.o -c /home/glywin/Desktop/client/src/tpm_attest.cpp",
+  "file": "/home/glywin/Desktop/client/src/tpm_attest.cpp",
+  "output": "CMakeFiles/secure_installer.dir/src/tpm_attest.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/secure_installer.dir/src/tpm_seal.cpp.o -c /home/glywin/Desktop/client/src/tpm_seal.cpp",
+  "file": "/home/glywin/Desktop/client/src/tpm_seal.cpp",
+  "output": "CMakeFiles/secure_installer.dir/src/tpm_seal.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/secure_installer.dir/src/secure_logger.cpp.o -c /home/glywin/Desktop/client/src/secure_logger.cpp",
+  "file": "/home/glywin/Desktop/client/src/secure_logger.cpp",
+  "output": "CMakeFiles/secure_installer.dir/src/secure_logger.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib/graphene-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/usr/include/tss2 -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/secure_installer_gui.dir/src/gui_installer.cpp.o -c /home/glywin/Desktop/client/src/gui_installer.cpp",
+  "file": "/home/glywin/Desktop/client/src/gui_installer.cpp",
+  "output": "CMakeFiles/secure_installer_gui.dir/src/gui_installer.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib/graphene-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/usr/include/tss2 -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/secure_installer_gui.dir/src/fingerprint.cpp.o -c /home/glywin/Desktop/client/src/fingerprint.cpp",
+  "file": "/home/glywin/Desktop/client/src/fingerprint.cpp",
+  "output": "CMakeFiles/secure_installer_gui.dir/src/fingerprint.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib/graphene-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/usr/include/tss2 -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/secure_installer_gui.dir/src/verifier.cpp.o -c /home/glywin/Desktop/client/src/verifier.cpp",
+  "file": "/home/glywin/Desktop/client/src/verifier.cpp",
+  "output": "CMakeFiles/secure_installer_gui.dir/src/verifier.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib/graphene-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/usr/include/tss2 -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/secure_installer_gui.dir/src/app_loader.cpp.o -c /home/glywin/Desktop/client/src/app_loader.cpp",
+  "file": "/home/glywin/Desktop/client/src/app_loader.cpp",
+  "output": "CMakeFiles/secure_installer_gui.dir/src/app_loader.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib/graphene-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/usr/include/tss2 -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/secure_installer_gui.dir/src/anti_re.cpp.o -c /home/glywin/Desktop/client/src/anti_re.cpp",
+  "file": "/home/glywin/Desktop/client/src/anti_re.cpp",
+  "output": "CMakeFiles/secure_installer_gui.dir/src/anti_re.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib/graphene-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/usr/include/tss2 -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/secure_installer_gui.dir/src/license_embed.cpp.o -c /home/glywin/Desktop/client/src/license_embed.cpp",
+  "file": "/home/glywin/Desktop/client/src/license_embed.cpp",
+  "output": "CMakeFiles/secure_installer_gui.dir/src/license_embed.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib/graphene-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/usr/include/tss2 -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/secure_installer_gui.dir/src/tpm_attest.cpp.o -c /home/glywin/Desktop/client/src/tpm_attest.cpp",
+  "file": "/home/glywin/Desktop/client/src/tpm_attest.cpp",
+  "output": "CMakeFiles/secure_installer_gui.dir/src/tpm_attest.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib/graphene-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/usr/include/tss2 -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/secure_installer_gui.dir/src/tpm_seal.cpp.o -c /home/glywin/Desktop/client/src/tpm_seal.cpp",
+  "file": "/home/glywin/Desktop/client/src/tpm_seal.cpp",
+  "output": "CMakeFiles/secure_installer_gui.dir/src/tpm_seal.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/include -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib/graphene-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -I/usr/include/tss2 -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -mfpmath=sse -msse -msse2 -pthread -o CMakeFiles/secure_installer_gui.dir/src/secure_logger.cpp.o -c /home/glywin/Desktop/client/src/secure_logger.cpp",
+  "file": "/home/glywin/Desktop/client/src/secure_logger.cpp",
+  "output": "CMakeFiles/secure_installer_gui.dir/src/secure_logger.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++ -DCPPHTTPLIB_BROTLI_SUPPORT -DCPPHTTPLIB_OPENSSL_SUPPORT -DCPPHTTPLIB_ZLIB_SUPPORT -Dsecure_app_core_EXPORTS -I/home/glywin/Desktop/client/include -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include -isystem /home/glywin/Desktop/client/build/_deps/cpp_httplib-src  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/secure_app_core.dir/src/app_core.cpp.o -c /home/glywin/Desktop/client/src/app_core.cpp",
+  "file": "/home/glywin/Desktop/client/src/app_core.cpp",
+  "output": "CMakeFiles/secure_app_core.dir/src/app_core.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++ -DCPPHTTPLIB_BROTLI_SUPPORT -DCPPHTTPLIB_OPENSSL_SUPPORT -DCPPHTTPLIB_ZLIB_SUPPORT -Dsecure_app_core_EXPORTS -I/home/glywin/Desktop/client/include -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include -isystem /home/glywin/Desktop/client/build/_deps/cpp_httplib-src  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/secure_app_core.dir/src/anti_re.cpp.o -c /home/glywin/Desktop/client/src/anti_re.cpp",
+  "file": "/home/glywin/Desktop/client/src/anti_re.cpp",
+  "output": "CMakeFiles/secure_app_core.dir/src/anti_re.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++ -DCPPHTTPLIB_BROTLI_SUPPORT -DCPPHTTPLIB_OPENSSL_SUPPORT -DCPPHTTPLIB_ZLIB_SUPPORT -Dsecure_app_core_EXPORTS -I/home/glywin/Desktop/client/include -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include -isystem /home/glywin/Desktop/client/build/_deps/cpp_httplib-src  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/secure_app_core.dir/src/license_embed.cpp.o -c /home/glywin/Desktop/client/src/license_embed.cpp",
+  "file": "/home/glywin/Desktop/client/src/license_embed.cpp",
+  "output": "CMakeFiles/secure_app_core.dir/src/license_embed.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++ -DCPPHTTPLIB_BROTLI_SUPPORT -DCPPHTTPLIB_OPENSSL_SUPPORT -DCPPHTTPLIB_ZLIB_SUPPORT -Dsecure_app_core_EXPORTS -I/home/glywin/Desktop/client/include -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include -isystem /home/glywin/Desktop/client/build/_deps/cpp_httplib-src  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/secure_app_core.dir/src/verifier.cpp.o -c /home/glywin/Desktop/client/src/verifier.cpp",
+  "file": "/home/glywin/Desktop/client/src/verifier.cpp",
+  "output": "CMakeFiles/secure_app_core.dir/src/verifier.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++ -DCPPHTTPLIB_BROTLI_SUPPORT -DCPPHTTPLIB_OPENSSL_SUPPORT -DCPPHTTPLIB_ZLIB_SUPPORT -Dsecure_app_core_EXPORTS -I/home/glywin/Desktop/client/include -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include -isystem /home/glywin/Desktop/client/build/_deps/cpp_httplib-src  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/secure_app_core.dir/src/secure_logger.cpp.o -c /home/glywin/Desktop/client/src/secure_logger.cpp",
+  "file": "/home/glywin/Desktop/client/src/secure_logger.cpp",
+  "output": "CMakeFiles/secure_app_core.dir/src/secure_logger.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++    -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/keygen.dir/tools/keygen.cpp.o -c /home/glywin/Desktop/client/tools/keygen.cpp",
+  "file": "/home/glywin/Desktop/client/tools/keygen.cpp",
+  "output": "CMakeFiles/keygen.dir/tools/keygen.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++  -I/home/glywin/Desktop/client/build/_deps/nlohmann_json-src/include  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/sign_license.dir/tools/sign_license.cpp.o -c /home/glywin/Desktop/client/tools/sign_license.cpp",
+  "file": "/home/glywin/Desktop/client/tools/sign_license.cpp",
+  "output": "CMakeFiles/sign_license.dir/tools/sign_license.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++    -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/encrypt_core.dir/tools/encrypt_core.cpp.o -c /home/glywin/Desktop/client/tools/encrypt_core.cpp",
+  "file": "/home/glywin/Desktop/client/tools/encrypt_core.cpp",
+  "output": "CMakeFiles/encrypt_core.dir/tools/encrypt_core.cpp.o"
+},
+{
+  "directory": "/home/glywin/Desktop/client/build",
+  "command": "/usr/bin/c++    -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/audit_decrypt.dir/tools/audit_decrypt.cpp.o -c /home/glywin/Desktop/client/tools/audit_decrypt.cpp",
+  "file": "/home/glywin/Desktop/client/tools/audit_decrypt.cpp",
+  "output": "CMakeFiles/audit_decrypt.dir/tools/audit_decrypt.cpp.o"
+}
+]

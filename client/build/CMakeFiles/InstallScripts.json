@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/glywin/Desktop/client/build/cmake_install.cmake",
+		"/home/glywin/Desktop/client/build/_deps/nlohmann_json-build/cmake_install.cmake",
+		"/home/glywin/Desktop/client/build/_deps/cpp_httplib-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
