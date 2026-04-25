@@ -7,6 +7,7 @@
 #include <openssl/evp.h>
 #include <openssl/pem.h>
 #include <openssl/rsa.h>
+#include <openssl/hmac.h>
 
 static std::vector<uint8_t> rsa_decrypt_key(EVP_PKEY* pkey,
                                              const std::vector<uint8_t>& encrypted_key) {
@@ -114,10 +115,14 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    if (data[4] != 1) {
-        std::cerr << "Error: Unsupported log version: " << (int)data[4] << "\n";
+    if (data[4] != 1 && data[4] != 2) {
+        std::cerr << "Error: Unsupported log version: " << (int)data[4] << " (expected 1 or 2)\n";
         EVP_PKEY_free(pkey);
         return 1;
+    }
+    int log_version = data[4];
+    if (log_version == 2) {
+        std::cout << "  [Log version 2: chained HMAC entries]\n";
     }
 
     size_t offset = 5;
@@ -138,6 +143,32 @@ int main(int argc, char* argv[]) {
     std::vector<uint8_t> encrypted_aes_key(data.begin() + offset,
                                              data.begin() + offset + enc_key_len);
     offset += enc_key_len;
+
+    if (log_version == 2) {
+        if (offset + 2 > data.size()) {
+            std::cerr << "Error: File truncated (chain key length).\n";
+            EVP_PKEY_free(pkey);
+            return 1;
+        }
+        uint16_t chain_key_len;
+        memcpy(&chain_key_len, data.data() + offset, 2);
+        offset += 2;
+        if (offset + chain_key_len > data.size()) {
+            std::cerr << "Error: File truncated (chain key data).\n";
+            EVP_PKEY_free(pkey);
+            return 1;
+        }
+        std::vector<uint8_t> encrypted_chain_key(data.begin() + offset,
+                                                  data.begin() + offset + chain_key_len);
+        offset += chain_key_len;
+
+        std::vector<uint8_t> chain_key = rsa_decrypt_key(pkey, encrypted_chain_key);
+        if (chain_key.size() == 32) {
+            std::cout << "  [Chain key decrypted successfully (" << chain_key.size() << " bytes)]\n";
+        } else {
+            std::cout << "  [Chain key decryption failed]\n";
+        }
+    }
 
     std::cout << "=== Encrypted Audit Log: " << log_path << " ===\n";
     std::cout << "  Client Fingerprint: " << fingerprint << "\n\n";

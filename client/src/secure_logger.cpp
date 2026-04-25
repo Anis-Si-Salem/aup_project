@@ -57,6 +57,7 @@ static std::vector<uint8_t> g_encrypted_aes_key;
 static std::string g_log_path;
 static std::string g_fingerprint;
 static std::vector<uint8_t> g_chain_key;
+static std::string g_last_chain_sig;
 static uint32_t g_entry_count = 0;
 static bool g_initialized = false;
 
@@ -120,19 +121,21 @@ static std::string compute_chain_signature(const std::string& prev_sig,
 }
 
 void init(const std::string& fingerprint_hex) {
+    init(fingerprint_hex, "");
+}
+
+void init(const std::string& fingerprint_hex, const std::string& log_path_override) {
     std::lock_guard<std::mutex> lock(g_mutex);
 
     g_fingerprint = fingerprint_hex;
     if (g_fingerprint.size() > FP_FIELD_LEN)
         g_fingerprint = g_fingerprint.substr(0, FP_FIELD_LEN);
 
-    // Generate random AES key for log encryption
     uint8_t aes_key[32];
     if (RAND_bytes(aes_key, sizeof(aes_key)) != 1) return;
     g_aes_key.assign(aes_key, aes_key + 32);
     OPENSSL_cleanse(aes_key, sizeof(aes_key));
 
-    // Generate chain key for HMAC chaining
     uint8_t chain_key[32];
     if (RAND_bytes(chain_key, sizeof(chain_key)) != 1) return;
     g_chain_key.assign(chain_key, chain_key + 32);
@@ -147,20 +150,30 @@ void init(const std::string& fingerprint_hex) {
 
     g_initialized = true;
     g_entry_count = 0;
+    g_last_chain_sig = std::string(32, '\0');
 
-    char exe[4096] = {};
-    ssize_t len = readlink("/proc/self/exe", exe, sizeof(exe) - 1);
-    if (len > 0) {
-        exe[len] = '\0';
-        std::string dir(exe);
-        auto slash = dir.rfind('/');
-        if (slash != std::string::npos) {
-            g_log_path = dir.substr(0, slash + 1) + "app_audit.enc";
-        } else {
-            g_log_path = "app_audit.enc";
-        }
+    if (!log_path_override.empty()) {
+        g_log_path = log_path_override;
     } else {
-        g_log_path = "app_audit.enc";
+        const char* env_path = getenv("AUDIT_LOG_PATH");
+        if (env_path && env_path[0] != '\0') {
+            g_log_path = env_path;
+        } else {
+            char exe[4096] = {};
+            ssize_t len = readlink("/proc/self/exe", exe, sizeof(exe) - 1);
+            if (len > 0) {
+                exe[len] = '\0';
+                std::string dir(exe);
+                auto slash = dir.rfind('/');
+                if (slash != std::string::npos) {
+                    g_log_path = dir.substr(0, slash + 1) + "app_audit.enc";
+                } else {
+                    g_log_path = "app_audit.enc";
+                }
+            } else {
+                g_log_path = "app_audit.enc";
+            }
+        }
     }
 
     std::ifstream test(g_log_path, std::ios::binary);
@@ -179,7 +192,6 @@ void init(const std::string& fingerprint_hex) {
         of.write(reinterpret_cast<const char*>(&enc_key_len), 2);
         of.write(reinterpret_cast<const char*>(g_encrypted_aes_key.data()), enc_key_len);
         
-        // Write chain key (encrypted with RSA) for verification
         std::vector<uint8_t> encrypted_chain = rsa_encrypt_key(g_chain_key.data(), g_chain_key.size());
         uint16_t chain_key_len = static_cast<uint16_t>(encrypted_chain.size());
         of.write(reinterpret_cast<const char*>(&chain_key_len), 2);
@@ -197,19 +209,15 @@ static bool encrypt_append(const std::string& plaintext) {
         current_fingerprint = "UNKNOWN";
     }
 
-    // Build entry with chain signature
-    // Format: TIMESTAMP | FP:[fingerprint] | EVENT | DETAIL
     std::string entry_data = ts() + " | FP:" + current_fingerprint + " | " + plaintext;
     
-    // First entry uses initial seed, subsequent use previous signature
-    std::string prev_sig(entry_data.substr(0, std::min(entry_data.size(), (size_t)32)));
-    if (g_entry_count > 0) {
-        // Get previous entry signature by reading from file (simplified - use entry count)
-        prev_sig = std::string(32, '0'); // Placeholder - in real impl, store last sig
+    std::string prev_sig = g_last_chain_sig;
+    if (g_entry_count == 0) {
+        prev_sig = std::string(entry_data.substr(0, std::min(entry_data.size(), (size_t)32)));
     }
     
-    // Compute chain signature
     std::string chain_sig = compute_chain_signature(prev_sig, entry_data);
+    g_last_chain_sig = chain_sig;
     
     // Final entry includes chain signature
     std::string final_entry = entry_data + " | CHAIN:" + chain_sig;

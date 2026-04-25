@@ -9,10 +9,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -fPIC -fstack-protector-strong -D_FO
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-z,relro,-z,now -Wl,-z,noexecstack -Wl,--as-needed")
 set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,-z,relro,-z,now -Wl,-z,noexecstack")
 
-set(NLOHMANN_JSON_DIR "${CMAKE_BINARY_DIR}/_deps/nlohmann_json-src")
-set(CPP_HTTPLIB_DIR "${CMAKE_BINARY_DIR}/_deps/cpp_httplib-src")
-add_subdirectory(${NLOHMANN_JSON_DIR} ${CMAKE_BINARY_DIR}/_deps/nlohmann_json-build)
-add_subdirectory(${CPP_HTTPLIB_DIR} ${CMAKE_BINARY_DIR}/_deps/cpp_httplib-build)
+find_package(nlohmann_json 3.11 REQUIRED)
 
 find_package(OpenSSL REQUIRED)
 find_package(Threads REQUIRED)
@@ -69,14 +66,17 @@ add_library(secure_app_core SHARED
   src/license_embed.cpp
   src/verifier.cpp
   src/secure_logger.cpp
+  src/fingerprint.cpp
+  src/tpm_attest.cpp
+  src/license_api.cpp
 )
-target_include_directories(secure_app_core PRIVATE include)
+target_include_directories(secure_app_core PRIVATE include ${TSS2_INCLUDE_DIRS})
 target_link_libraries(secure_app_core PRIVATE
   OpenSSL::SSL OpenSSL::Crypto
   nlohmann_json::nlohmann_json
-  httplib::httplib
   Threads::Threads
   dl
+  ${TSS2_LIBRARIES}
 )
 
 # Vendor tools
@@ -91,3 +91,15 @@ target_link_libraries(encrypt_core PRIVATE OpenSSL::SSL OpenSSL::Crypto)
 
 add_executable(audit_decrypt tools/audit_decrypt.cpp)
 target_link_libraries(audit_decrypt PRIVATE OpenSSL::SSL OpenSSL::Crypto)
+
+add_executable(get_fingerprint
+  tools/get_fingerprint.cpp
+  src/fingerprint.cpp
+  src/tpm_attest.cpp
+)
+target_include_directories(get_fingerprint PRIVATE include ${TSS2_INCLUDE_DIRS})
+target_link_libraries(get_fingerprint PRIVATE
+  OpenSSL::SSL OpenSSL::Crypto
+  nlohmann_json::nlohmann_json
+  ${TSS2_LIBRARIES}
+)

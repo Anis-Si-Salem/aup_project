@@ -1,1 +1,0 @@
-/usr/bin/c++  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG  -Wl,-z,relro,-z,now -Wl,-z,noexecstack -Wl,--as-needed -Wl,--dependency-file=CMakeFiles/encrypt_core.dir/link.d CMakeFiles/encrypt_core.dir/tools/encrypt_core.cpp.o -o encrypt_core  /usr/lib/libssl.so /usr/lib/libcrypto.so

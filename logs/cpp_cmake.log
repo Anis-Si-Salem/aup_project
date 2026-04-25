@@ -1,0 +1,28 @@
+-- The C compiler identification is GNU 15.2.1
+-- The CXX compiler identification is GNU 15.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found nlohmann_json: /home/gyro/miniconda3/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found suitable version "3.11.2", minimum required is "3.11")
+-- Found OpenSSL: /usr/lib/libcrypto.so (found version "3.6.2")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1")
+-- Checking for module 'gtk4'
+--   Found gtk4, version 4.22.2
+-- Checking for modules 'tss2-esys;tss2-mu;tss2-rc;tss2-tctildr'
+--   Found tss2-esys, version 4.1.3
+--   Found tss2-mu, version 4.1.3
+--   Found tss2-rc, version 4.1.3
+--   Found tss2-tctildr, version 4.1.3
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/gyro/Documents/aup_project/client/build

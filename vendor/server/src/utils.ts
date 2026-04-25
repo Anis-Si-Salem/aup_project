@@ -40,3 +40,14 @@ export function decryptWithPrivateKey(encrypted: string): string {
   );
   return decrypted.toString("utf-8");
 }
+
+export function decryptRawWithPrivateKey(encrypted: Buffer): Buffer {
+  return crypto.privateDecrypt(
+    {
+      key: getPrivateKey(),
+      padding: crypto.constants.RSA_PKCS1_OAEP_PADDING,
+      oaepHash: "sha256",
+    },
+    encrypted
+  );
+}

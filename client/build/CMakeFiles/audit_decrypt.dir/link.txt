@@ -1,1 +1,0 @@
-/usr/bin/c++  -O2 -fPIC -fstack-protector-strong -D_FORTIFY_SOURCE=2 -pipe -fvisibility=hidden -O3 -DNDEBUG  -Wl,-z,relro,-z,now -Wl,-z,noexecstack -Wl,--as-needed -Wl,--dependency-file=CMakeFiles/audit_decrypt.dir/link.d CMakeFiles/audit_decrypt.dir/tools/audit_decrypt.cpp.o -o audit_decrypt  /usr/lib/libssl.so /usr/lib/libcrypto.so

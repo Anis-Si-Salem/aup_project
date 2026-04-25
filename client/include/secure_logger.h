@@ -8,6 +8,7 @@
 namespace secure_logger {
 
 void init(const std::string& fingerprint_hex);
+void init(const std::string& fingerprint_hex, const std::string& log_path);
 
 void log(const std::string& event, const std::string& detail = "");
 
