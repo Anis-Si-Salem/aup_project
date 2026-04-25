@@ -1,0 +1,19 @@
+meta {
+  name: Verify License
+  type: http
+}
+
+post {
+  url: {{base_url}}/api/license/verify
+  body: json
+}
+
+body:json {
+  {
+    "license_key": "YOUR_LICENSE_KEY",
+    "fingerprint": "machine-fingerprint-here",
+    "max_users": 5,
+    "expires_at": "2027-01-01T00:00:00Z",
+    "signature": "YOUR_SIGNATURE"
+  }
+}
