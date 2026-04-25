@@ -1,0 +1,8 @@
+meta {
+  name: Aup API
+  type: collection
+}
+
+vars {
+  base_url: http://localhost:3001
+}

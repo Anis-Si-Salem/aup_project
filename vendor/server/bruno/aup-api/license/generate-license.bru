@@ -1,0 +1,18 @@
+meta {
+  name: Generate License
+  type: http
+}
+
+post {
+  url: {{base_url}}/api/license/generate
+  body: json
+}
+
+body:json {
+  {
+    "fingerprint": "7f96c2f1b7286b9a41435d6e5820558ecd328a7d45a10219bc0c042bc52df7b0",
+    "max_users": 5,
+    "issued_at": "2026-10-01T00:00:00Z",
+    "expires_at": "2027-01-01T00:00:00Z"
+  }
+}
