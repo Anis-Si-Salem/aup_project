@@ -188,11 +188,3 @@ For binary format, the server:
 - Looks up matching license and renews it
 - Stores decrypted entries in SQLite `audit_logs` table
 
-## Bug Fixes Applied
-
-| Bug | Fix |
-|-----|-----|
-| `secure_logger` writes v2 but `audit_decrypt` only accepts v1 | `audit_decrypt` now accepts both v1 and v2, parses chain key field for v2 |
-| Chain signature always zeros after entry 0 | `g_last_chain_sig` now tracks the actual HMAC chain signature between entries |
-| Log path hardcoded next to executable | Priority: explicit path → `AUDIT_LOG_PATH` env var → exe directory |
-| Node.js server can't parse binary AUDT format | Renewal endpoint now detects `AUDT` magic bytes and parses binary format |

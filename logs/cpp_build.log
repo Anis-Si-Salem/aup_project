@@ -1,49 +1,49 @@
-[  2%] Building CXX object CMakeFiles/secure_installer.dir/src/main.cpp.o
-[  4%] Building CXX object CMakeFiles/sign_license.dir/tools/sign_license.cpp.o
-[  7%] Building CXX object CMakeFiles/secure_app_core.dir/src/app_core.cpp.o
-[  9%] Building CXX object CMakeFiles/audit_decrypt.dir/tools/audit_decrypt.cpp.o
-[ 12%] Building CXX object CMakeFiles/encrypt_core.dir/tools/encrypt_core.cpp.o
-[ 17%] Building CXX object CMakeFiles/get_fingerprint.dir/tools/get_fingerprint.cpp.o
+[ 17%] Building CXX object CMakeFiles/sign_license.dir/tools/sign_license.cpp.o
+[ 17%] Building CXX object CMakeFiles/secure_installer.dir/src/main.cpp.o
+[ 17%] Building CXX object CMakeFiles/audit_decrypt.dir/tools/audit_decrypt.cpp.o
 [ 17%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/gui_installer.cpp.o
-[ 19%] Building CXX object CMakeFiles/keygen.dir/tools/keygen.cpp.o
+[ 17%] Building CXX object CMakeFiles/encrypt_core.dir/tools/encrypt_core.cpp.o
+[ 17%] Building CXX object CMakeFiles/keygen.dir/tools/keygen.cpp.o
+[ 17%] Building CXX object CMakeFiles/secure_app_core.dir/src/app_core.cpp.o
+[ 19%] Building CXX object CMakeFiles/get_fingerprint.dir/tools/get_fingerprint.cpp.o
 [ 21%] Building CXX object CMakeFiles/get_fingerprint.dir/src/fingerprint.cpp.o
 [ 24%] Linking CXX executable keygen
 [ 26%] Building CXX object CMakeFiles/secure_app_core.dir/src/anti_re.cpp.o
 [ 29%] Linking CXX executable encrypt_core
 [ 29%] Built target keygen
-[ 31%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/fingerprint.cpp.o
-[ 34%] Linking CXX executable audit_decrypt
-[ 34%] Built target encrypt_core
-[ 36%] Building CXX object CMakeFiles/get_fingerprint.dir/src/tpm_attest.cpp.o
+[ 31%] Building CXX object CMakeFiles/secure_app_core.dir/src/license_embed.cpp.o
+[ 31%] Built target encrypt_core
+[ 34%] Building CXX object CMakeFiles/get_fingerprint.dir/src/tpm_attest.cpp.o
+[ 36%] Linking CXX executable audit_decrypt
 [ 36%] Built target audit_decrypt
-[ 39%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/verifier.cpp.o
+[ 39%] Building CXX object CMakeFiles/secure_app_core.dir/src/verifier.cpp.o
 [ 41%] Building CXX object CMakeFiles/secure_installer.dir/src/fingerprint.cpp.o
-[ 43%] Building CXX object CMakeFiles/secure_installer.dir/src/verifier.cpp.o
-[ 46%] Building CXX object CMakeFiles/secure_app_core.dir/src/license_embed.cpp.o
-[ 48%] Building CXX object CMakeFiles/secure_app_core.dir/src/verifier.cpp.o
-[ 51%] Building CXX object CMakeFiles/secure_app_core.dir/src/secure_logger.cpp.o
-[ 53%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/app_loader.cpp.o
-[ 56%] Building CXX object CMakeFiles/secure_app_core.dir/src/fingerprint.cpp.o
+[ 43%] Building CXX object CMakeFiles/secure_app_core.dir/src/secure_logger.cpp.o
+[ 46%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/fingerprint.cpp.o
+[ 48%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/verifier.cpp.o
+[ 51%] Building CXX object CMakeFiles/secure_app_core.dir/src/fingerprint.cpp.o
+[ 53%] Building CXX object CMakeFiles/secure_installer.dir/src/verifier.cpp.o
+[ 56%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/app_loader.cpp.o
 [ 58%] Linking CXX executable sign_license
 [ 58%] Built target sign_license
-[ 60%] Building CXX object CMakeFiles/secure_app_core.dir/src/tpm_attest.cpp.o
-[ 63%] Building CXX object CMakeFiles/secure_app_core.dir/src/license_api.cpp.o
-[ 65%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/anti_re.cpp.o
-[ 68%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/license_embed.cpp.o
-[ 70%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/tpm_attest.cpp.o
-[ 73%] Linking CXX executable get_fingerprint
-[ 73%] Built target get_fingerprint
-[ 75%] Building CXX object CMakeFiles/secure_installer.dir/src/app_loader.cpp.o
-[ 78%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/tpm_seal.cpp.o
-[ 80%] Building CXX object CMakeFiles/secure_installer.dir/src/anti_re.cpp.o
-[ 82%] Building CXX object CMakeFiles/secure_installer.dir/src/license_embed.cpp.o
-[ 85%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/secure_logger.cpp.o
+[ 60%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/anti_re.cpp.o
+[ 63%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/license_embed.cpp.o
+[ 65%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/tpm_attest.cpp.o
+[ 68%] Building CXX object CMakeFiles/secure_app_core.dir/src/tpm_attest.cpp.o
+[ 70%] Linking CXX executable get_fingerprint
+[ 70%] Built target get_fingerprint
+[ 73%] Building CXX object CMakeFiles/secure_installer.dir/src/app_loader.cpp.o
+[ 75%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/tpm_seal.cpp.o
+[ 78%] Building CXX object CMakeFiles/secure_app_core.dir/src/license_api.cpp.o
+[ 80%] Building CXX object CMakeFiles/secure_installer_gui.dir/src/secure_logger.cpp.o
+[ 82%] Building CXX object CMakeFiles/secure_installer.dir/src/anti_re.cpp.o
+[ 85%] Building CXX object CMakeFiles/secure_installer.dir/src/license_embed.cpp.o
 [ 87%] Building CXX object CMakeFiles/secure_installer.dir/src/tpm_attest.cpp.o
 [ 90%] Building CXX object CMakeFiles/secure_installer.dir/src/tpm_seal.cpp.o
 [ 92%] Building CXX object CMakeFiles/secure_installer.dir/src/secure_logger.cpp.o
-[ 95%] Linking CXX shared library libsecure_app_core.so
-[ 95%] Built target secure_app_core
-[ 97%] Linking CXX executable secure_installer_gui
-[ 97%] Built target secure_installer_gui
+[ 95%] Linking CXX executable secure_installer_gui
+[ 95%] Built target secure_installer_gui
+[ 97%] Linking CXX shared library libsecure_app_core.so
+[ 97%] Built target secure_app_core
 [100%] Linking CXX executable secure_installer
 [100%] Built target secure_installer

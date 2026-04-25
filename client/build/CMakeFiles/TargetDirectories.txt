@@ -1,0 +1,10 @@
+/home/gyro/Documents/aup_project/client/build/CMakeFiles/secure_installer.dir
+/home/gyro/Documents/aup_project/client/build/CMakeFiles/secure_installer_gui.dir
+/home/gyro/Documents/aup_project/client/build/CMakeFiles/secure_app_core.dir
+/home/gyro/Documents/aup_project/client/build/CMakeFiles/keygen.dir
+/home/gyro/Documents/aup_project/client/build/CMakeFiles/sign_license.dir
+/home/gyro/Documents/aup_project/client/build/CMakeFiles/encrypt_core.dir
+/home/gyro/Documents/aup_project/client/build/CMakeFiles/audit_decrypt.dir
+/home/gyro/Documents/aup_project/client/build/CMakeFiles/get_fingerprint.dir
+/home/gyro/Documents/aup_project/client/build/CMakeFiles/edit_cache.dir
+/home/gyro/Documents/aup_project/client/build/CMakeFiles/rebuild_cache.dir

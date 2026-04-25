@@ -45,7 +45,7 @@ aup_project/
 │   ├── CMakeLists.txt             #   Build config (requires OpenSSL, nlohmann_json, GTK4, TSS2)
 │   ├── include/                   #   C++ headers
 │   │   ├── fingerprint.h          #     Hardware fingerprinting
-│   │   ├── tpm_attest.h           #     TPM attestation
+│   │   ├── tpm_attest.h           #    TPM attestation
 │   │   ├── license_api.h          #     C API exported to Go (also copied to aup/lib/)
 │   │   └── ...
 │   ├── src/                       #   C++ implementation
